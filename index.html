@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias da Vila dos pelicanos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#d99375, #fff);
+}
+header{
+    background:#e5a884;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+nav{
+    background:#d99375;
+    position: sticky;
+    top:0;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+nav li{
+    margin:10px 20px;
+}
+nav a{
+    color:rgb(247, 192, 129);
+    text-decoration:none;
+    font-weight:bold;
+}
+.container{
+    display:flex;
+    max-width:1100px;
+    margin:20px auto;
+    gap:20px;
+}
+main{
+    flex:3;
+}
+aside{
+    flex:1;
+    background: #d4a28c;
+    padding:15px;
+    border-radius:15px;
+}
+section{
+    margin-bottom:40px;
+}
+section h2{
+    color:#d99375;
+    margin-bottom:10px;
+}
+.card{
+    background:white;
+    border-radius:15px;
+    margin-bottom:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card h3{
+    padding:10px;
+    color:#d99375;
+}
+.card p{
+    padding:0 10px 10px;
+}
+footer{
+    background:#e69160;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.card{
+    background:white;
+    border-radius:20px; 
+    margin-bottom:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid #d99375; 
+    transition:0.3s;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(50% - 10px); 
+  margin: 10px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    transition: transform 0.4s ease;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card h3{
+    padding:10px;
+    color:#d99375;
+}
+.card p{
+    padding:0 7px 7px;
+}
+section{
+    background: #fff;
+    padding:15px;
+    border-radius:15px;
+    border:2px dashed #c28d6e; 
+    margin-bottom:20px;
+}
+aside{
+    background:#d4a28c;
+    padding:15px;
+    border-radius:20px;
+    border:2px solid #c28d6e;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(50% - 10px); 
+  margin: 10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1> Notícias da Vila dos pelicanos</h1>
+    <p>Todas os detalhes sobre nossa querida vila! </p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#estacoes">Estações</a></li>
+        <li><a href="#eventos">Eventos da temporada</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<main>
+
+<section id="estacoes">
+<h2> Todas as estações do ano</h2>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/9/9c/Spring.png">
+<h3>Primavera</h3>
+<p>Na primavera, a grama é verde, as árvores recuperam suas folhas e florescem, e pétalas rosas voam pelo ar em alguns dias.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Summer.png">
+<h3>Verão</h3>
+<p>No verão, a grama permanece verde, embora visivelmente mais amarela do que a grama da primavera.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/5/5d/Fall.png">
+<h3>Outono</h3>
+<p>É considerada a melhor estação na vila porque alguns dos cultivos mais valiosos podem crescer nessa estação.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/a/a7/Winter.png">
+<h3>Inverno</h3>
+<p> O Inverno é uma das estações mais difíceis, por que toda a grama e as plantações na fazenda morrem.</p>
+</div>
+
+</section>
+
+<section id="eventos">
+<h2> Eventos de Primavera e Verão</h2>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/20/Egg_Festival.png/1280px-Egg_Festival.png">
+<h3>Festival do ovo</h3>
+<p>O festival termina depois que o prefeito Lewis anuncia o vencedor da caça ao ovo.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ad/Flower_Festival.jpg/1280px-Flower_Festival.jpg">
+<h3>dança das flores</h3>
+<p>Uma vez que você conversa com o prefeito Lewis, a dança começa. O festival termina depois que a dança é realizada.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/af/Luau.png/1280px-Luau.png">
+<h3>Luau</h3>
+<p>O Luau termina automaticamente depois que o governador prova a sopa.</p>
+</div>
+
+<div class="card">
+<img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/35/Dance_Of_The_Moonlight_Jellies.jpg/1280px-Dance_Of_The_Moonlight_Jellies.jpg">
+<h3>Dança das Medusas-da-Lua</h3>
+<p>O festival termina automaticamente depois de ver as águas-vivas.</p>
+</div>
+
+</section>
+
+</main>
+
+<aside>
+<h3> Pierre VS Joja</h3>
+<p>Nos últimos dias o valor de mantimentos básicos na jóia aumentou em 2,7% !</p>
+
+<br>
+
+<h3> Sáficas?? </h3>
+<p>A fazendeira e a Haley estão tendo um caso???</p>
+</aside>
+
+</div>
+
+<footer>
+<p>2026 - Notícias da Vila dos pelicanos</p>
+</footer>
+
+</body>
+</html>
+
