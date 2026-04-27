@@ -1,0 +1,56 @@
+/*seletor de classe*/
+.caixa {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+.static{
+    position: static;
+    background-color: rgb(175, 223, 223);
+}
+
+.relative{
+    position: relative;
+    background-color: rgb(156, 184, 184);
+    top: 50px;
+    left: 200px;
+}
+
+.absolute{
+    position: absolute;
+    background-color: rgb(112, 175, 175);
+    margin: 0;
+    top: 150px;
+    left: 50px;
+    z-index: 3;
+}
+
+.frente {
+    z-index: 2;
+    left: 60px;
+    top:170px;
+    background-color:aquamarine;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color:rgb(146, 188, 216);
+    z-index: 1000;
+}
+
+.espaco{
+    height: 900px;
+    background-color: lightcyan;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(137, 199, 199);
+}
