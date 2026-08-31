@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Manual</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .semaforo-caixa {
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 5px solid #555;
+        }
+
+        .luz {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #444;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .luz.vermelha.acesa {
+            background-color: #ff0000;
+        }
+
+        .luz.amarela.acesa {
+            background-color: #ffcc00;
+        }
+
+        .luz.verde.acesa {
+            background-color: #00ff00;
+        }
+
+        .controles {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .botao-parar { background-color: #c0392b; }
+        .botao-atencao { background-color: #f39c12; }
+        .botao-prosseguir { background-color: #27ae60; }
+
+        .botao-parar:hover { background-color: #e74c3c; }
+        .botao-atencao:hover { background-color: #f1c40f; }
+        .botao-prosseguir:hover { background-color: #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <div class="semaforo-caixa">
+        <div class="luz vermelha" id="luz-vermelha"></div>
+        <div class="luz amarela" id="luz-amarela"></div>
+        <div class="luz verde" id="luz-verde"></div>
+
+        <div class="controles">
+            <div class="botoes">
+                <button class="botao-parar" onclick="acender('vermelha')">PARAR</button>
+                <button class="botao-atencao" onclick="acender('amarela')">ATENÇÃO</button>
+                <button class="botao-prosseguir" onclick="acender('verde')">PROSSEGUIR</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function acender(cor) {
+            const todas = document.querySelectorAll('.luz');
+            todas.forEach(l => l.classList.remove('acesa'));
+            
+            document.getElementById('luz-' + cor).classList.add('acesa');
+        }
+    </script>
+</body>
+</html>
