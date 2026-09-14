@@ -1,0 +1,21 @@
+body {
+    font: normal 18pt Arial;
+}
+input{
+    font: normal 18pt Arial;
+    width: 100px;
+}
+div#resultado {
+    margin-top: 20px;
+    font-weight: 600;
+}
+button {
+    font: normal 18pt Arial;
+    width: 150px;
+    height: 40px;
+    background-color: #a3d1a4;
+    color: rgb(210, 136, 212);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
